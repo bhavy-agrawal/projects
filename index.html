@@ -4,54 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title> listen free anime music </title>
-</head>
-
-
-
-<body>
-    <div class=" background-image">
-        <div class="navbar">
-            <img src="nezu.png" class="logo">
-            <ul>
-                <li><a href="#">HOME</a> </li>
-                <li><a href="#">ABOUT</a> </li>
-                <li><a href="#">INTRESTS</a> </li>
-                <li><a href="#">CONTACT</a> </li>
-
-            </ul>
-        </div>
-    </div>
-    <div class="content">
-        <div class="right-col">
-            <p>Click Here To Listen </p>
-            <img src="play.png" id="icon">
-
-        </div>
-    </div>
-    <audio id="anime">
-        <source src="tanjirou.mp3" type="audio/mp3">
-    </audio>
-    <script>
-        var anime = document.getElementById("anime");
-        var icon = document.getElementById("icon");
-        icon.onclick = function () {
-            if (anime.paused) {
-                anime.play();
-                icon.src = "pause.png";
-            } else {
-                anime.pause();
-                icon.src = "play.png";
-
-
-            }
-        }
-    </script>
-
-
-
-
-</body>
-<style>
+    
+    <style>
     * {
         margin: 0;
         padding: 0;
@@ -125,5 +79,54 @@
 
     }
 </style>
+    
+</head>
+
+
+
+<body>
+    <div class=" background-image">
+        <div class="navbar">
+            <img src="nezu.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a> </li>
+                <li><a href="#">ABOUT</a> </li>
+                <li><a href="#">INTRESTS</a> </li>
+                <li><a href="#">CONTACT</a> </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="right-col">
+            <p>Click Here To Listen </p>
+            <img src="play.png" id="icon">
+
+        </div>
+    </div>
+    <audio id="anime">
+        <source src="tanjirou.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var anime = document.getElementById("anime");
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            if (anime.paused) {
+                anime.play();
+                icon.src = "pause.png";
+            } else {
+                anime.pause();
+                icon.src = "play.png";
+
+
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
 
 </html>
