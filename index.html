@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> listen free anime music </title>
+</head>
+
+
+
+<body>
+    <div class=" background-image">
+        <div class="navbar">
+            <img src="nezu.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a> </li>
+                <li><a href="#">ABOUT</a> </li>
+                <li><a href="#">INTRESTS</a> </li>
+                <li><a href="#">CONTACT</a> </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="right-col">
+            <p>Click Here To Listen </p>
+            <img src="play.png" id="icon">
+
+        </div>
+    </div>
+    <audio id="anime">
+        <source src="tanjirou.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var anime = document.getElementById("anime");
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            if (anime.paused) {
+                anime.play();
+                icon.src = "pause.png";
+            } else {
+                anime.pause();
+                icon.src = "play.png";
+
+
+            }
+        }
+    </script>
+
+
+
+
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    .background-image {
+        background-image: url('https://i.pinimg.com/originals/a1/96/1a/a1961a55e07a8fa394182532990c1729.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        height: 100vh;
+        width: 100vmax;
+    }
+
+    .navbar {
+        width: 88%;
+        margin: auto;
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 140px;
+        cursor: pointer;
+
+
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 15;
+
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: #5f5f5f;
+        font-size: 20px;
+    }
+
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 30%;
+    }
+
+    .right-col {
+        float: right;
+        margin-right: 6%;
+        margin-top: 120px;
+        display: flex;
+        align-items: center;
+    }
+
+    .right-col p {
+        font-size: 18px;
+        color: #5f5f5f;
+        font-weight: 400;
+        margin-right: 15px;
+
+    }
+
+    #icon {
+        width: 80px;
+        cursor: pointer;
+
+    }
+</style>
+
+</html>
